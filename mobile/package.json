@@ -7,9 +7,11 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "dev": "react-native run-android && adb reverse tcp:3333 tcp:3333"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "react": "16.13.1",
     "react-native": "0.63.4"
   },
